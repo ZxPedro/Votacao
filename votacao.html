@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eleições 2020</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="assets/eua.png"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="candidatos.html">Candidatos</a></li>
+                <li><a href="votacao.html">Votação</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="candidatos.html">Candidatos</a></li>
+                <li><a href="votacao.html">Votação</a></li>
+                <li><a href="grupo.html">Grupo</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"
+                    style="color: white;">menu</i></a>
+        </div>
+    </nav>
+</header>
+
+  <main>
+    <!--  Mapa-->
+    <section class="neex">
+      <div class="container">
+        <h3 style="text-align: center;">VOTAÇÃO</h3>
+          <div class="row">
+              <form class="col s12 m12 l12 center-align" name="ficha">
+                  <div class="row center">
+                      <div class="input-field col s12 m12 l12">
+                          <input placeholder="Digite o seu nome" id="name" type="text" class="validate">
+                          <label for="first_name">Nome</label>
+                      </div>
+                      <div class="input-field col s12 m12 l12">
+                          <input placeholder="Digite o seu título eleitoral" id="title" type="number"
+                              class="validate">
+                          <label for="last_name">Título de eleitor</label>
+                      </div>
+                  </div>
+                  <div class="input-field col s12 m12 l12">
+                      <select class="icons" id="presidente">
+                          <option value="" disabled selected>Escolha seu Presidente</option>
+                          <option value="Biden" data-icon="assets/Joe-icon.png" class="left">Joe Biden</option>
+                          <option value="Trump" data-icon="assets/donald-icon.png" class="left">Donald Trump</option>
+                      </select>
+                      <label>Presidentes</label>
+                  </div>
+                  <div class="input-field col s12 m12 l12">
+                    <select id="estado">
+                        <option value="" disabled selected>Selecione o seu estado</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="Texas">Texas</option>
+                    </select>
+                    <label>Estados</label>
+                </div>
+                <a class="waves-effect waves-light btn" onclick="votar()"><i class="material-icons left">check</i>Enviar</a>
+                <a class="waves-effect waves-light btn" onclick="limpar()"><i class="material-icons right">clear</i>Cancelar</a>
+            </form>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container" style="text-align: center;">
+            <p class="text-footer">© 2020 Copyright, todos os direitos reservados.</p>
+            <p class="text-footer">Developer by He4rt/PORÃO.</p>
+        </div>
+    </div>
+</footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
